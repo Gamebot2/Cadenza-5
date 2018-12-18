@@ -1,3 +1,51 @@
-p {
-    color: red;
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 600%;
+    padding-top: 10px;
+    font-family: 'Great Vibes', cursive;
+}
+
+#header {   
+    height: 200px;
+    vertical-align: center;
+}
+
+body {
+    background-color: #333;
+}
+
+#orangeBar {
+    color: #d96c13;
+    background-color: #d96c13;
+    width: 100%;
+    height: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ddd;
+    height: 30px;
+    text-align: center;
+}
+
+li {
+    float: left;
+    display: inline;
+}
+
+a {
+    color: white;
+    display: block;
+    padding: 8px;
+    background-color: #ddd;
+    text-decoration: none;
+}
+
+#spacer {
+    width: 40%;
 }
