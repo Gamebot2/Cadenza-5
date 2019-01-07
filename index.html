@@ -1,27 +1,256 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Cadenza 5</title>
     <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animate.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-    
-<body ng-app = "CadenzaApp" ng-cloak>
-    <div id="header" class="animated fadeIn">
-        <h1>Cadenza 5</h1>
+
+<body id="myPage" data-spy="scroll" data-target="navBar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">Cadenza
+                    5</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#myPage">HOME</a></li>
+                    <li><a href="#members">MEMBERS</a></li>
+                    <li><a href="#repertoire">REPERTOIRE</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container with the Home section-->
+    <div id="header" class="jumbotron jumbotron-fluid bg-1">
+        <div class="container">
+            <h1 class="display-4" style="font-family:'Great Vibes', cursive">Cadenza 5</h1>
+            <p class="">A1 Piano Quintet at the University of Texas at Austin</p>
+        </div>
     </div>
-    <div id="orangeBar" class="animated fadeIn"> </div>
-    <ul class="animated fadeIn">
-        <li><a href="">Home</a></li>
-        <li><a href="">News</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">About</a></li>
-    </ul>
+
+    <!-- Container with the Member Section -->
+    <div id="members" class="container text-center">
+        <h2>The Members</h2>
+        <p><em>We love music!</em></p>
+        <p>Cadenza 5 is a piano quintet comprised of five students at the University
+            of Texas at Austin. We try to learn various forms of music and play them
+            for assorted events and functions in the Austin area, such as weddings or
+            other performances. If you need a group of classical instruments to play for
+            your event, then we're the people to call! (And we do take requests within reason)
+        </p>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Ansh</strong></p><br>
+                <a href="#anshInfo" data-toggle="collapse">
+                    <img src="img/Ansh.JPG" class="img-circle person" alt="Ansh Jain" width="255px" height="255px">
+                </a>
+                <div id="anshInfo" class="collapse">
+                    <p>Violist and Website Control</p>
+                    <p>Loves computer science, math, and music</p>
+                    <p>Member since 2019</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Kevin</strong></p><br>
+                <a href="#kevinInfo" data-toggle="collapse">
+                    <img src="img/Kevin.JPG" class="img-circle person" alt="Kevin Wang" width="255px" height="255px">
+                </a>
+                <div id="kevinInfo" class="collapse">
+                    <p>Pianist</p>
+                    <p>Loves pianos, politics, and musicals</p>
+                    <p>Member since 2019</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Mia</strong></p><br>
+                <a href="#miaInfo" data-toggle="collapse">
+                    <img src="img/Mia.JPG" class="img-circle person" alt="Mia Orlandella" width="255px" height="255px">
+                </a>
+                <div id="miaInfo" class="collapse">
+                    <p>Cellist and Comedic Relief</p>
+                    <p>Loves German and Lord of the Rings</p>
+                    <p>Member since 2019</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Nick</strong></p><br>
+                <a href="#nickInfo" data-toggle="collapse">
+                    <img src="img/Nick H.JPG" class="img-circle person" alt="Nick Hammel" width="255px" height="255px">
+                </a>
+                <div id="nickInfo" class="collapse">
+                    <p>First Violinist and God Status</p>
+                    <p>Loves violins, socks, and videogames</p>
+                    <p>Member since 2019</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Varsha</strong></p><br>
+                <a href="#varshaInfo" data-toggle="collapse">
+                    <img src="img/Varsha.JPG" class="img-circle person" alt="Varsha Vasu" width="255px" height="255px">
+                </a>
+                <div id="varshaInfo" class="collapse">
+                    <p>Second Violinist</p>
+                    <p>Loves </p>
+                    <p>Member since 2019</p>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+
+    <!--Container with the Repertoire Section-->
+    <div id="repertoire" class="bg-1">
+        <div class="container">
+            <h2 class="text-center">Repertoire</h2>
+            <p class="text-center">We play all kinds of music.</p>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">Romantic</a></li>
+                <li><a data-toggle="tab" href="#menu1">Modern</a></li>
+                <li><a data-toggle="tab" href="#menu2">Miscellaneous</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <h5>Brahms Piano Quintet No. 2, Op. 34</h5>
+                    <ul>
+                        <li>I. Allegro non troppo</li>
+                        <li>II. Andante, un poco Adagio</li>
+                        <li>III. Scherzo, Allegro</li>
+                        <li>IV. Finale: Poco Sostenuto, Allegro non troppo</li>
+                    </ul>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <h5>Running Home to You</h5>
+                    <ul>
+                        <li>
+                            <p>Song sung by Barry Allen to Iris West in <span style="font-style: italic">The Flash</span></p>
+                        </li>
+                    </ul>
+                    <h5>Dear Theodosia</h5>
+                    <ul>
+                        <li>
+                            <p>From the Broadway Musical <span style="font-style: italic">Hamilton</span></p>
+                        </li>
+                    </ul>
+                    <h5>Found Tonight</h5>
+                    <ul>
+                        <li>
+                            <p>By Lin-Manuel Miranda and Ben Platt</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <h5>Mii Channel</h5>
+                    <ul>
+                        <li>
+                            <p>Classic Mii Channel theme from the Wii.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Container with the Contact Section-->
+    <div id="contact" class="container">
+        <h2 class="text-center">Contact Us</h2>
+        <p class="text-center">Drop us a line!</p>
+        <div class="row">
+            <div class="col-md-4">
+                <p>Fan? Drop a note.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Austin, TX</p>
+                <p><span class="glyphicon glyphicon-phone"></span> Phone: +1 4693500297</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> Email: Coming Soon</p>
+            </div>
+            <div class="col-md-8">
+                <form action = "mailto:ansh.jain1@outlook.com" method = "post" enctype = "text/plain">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Your Name" type="text"
+                                required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Your Email" type="email"
+                                required>
+                        </div>
+                    </div>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <button class="btn pull-right" type="submit">Send</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Image of location/map -->
+    <img src="img/Piano.jpg" class="img-responsive" style="width:100%">
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br><br>
+        <p>Website designed by Ansh Jain</p>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            // Initialize Tooltip
+            $('[data-toggle="tooltip"]').tooltip();
+
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        })
+    </script>
 </body>
 
 </html>
