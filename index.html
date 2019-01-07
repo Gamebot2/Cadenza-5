@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Cadenza 5</title>
     <link rel="icon" href="img/favicon.ico">
@@ -17,10 +16,12 @@
 </head>
 
 <body id="myPage" data-spy="scroll" data-target="navBar" data-offset="50">
+    <!-- Container for the navigation bar at the top (fixed) -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <!-- Handles the menu icon for the mobile version -->
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -39,7 +40,7 @@
         </div>
     </nav>
 
-    <!-- Container with the Home section-->
+    <!-- Container with the Home section (may modify later with a carousel -->
     <div id="header" class="jumbotron jumbotron-fluid bg-1">
         <div class="container">
             <h1 class="display-4" style="font-family:'Great Vibes', cursive">Cadenza 5</h1>
@@ -47,7 +48,7 @@
         </div>
     </div>
 
-    <!-- Container with the Member Section -->
+    <!-- Container with the Member Section (split into two rows) -->
     <div id="members" class="container text-center">
         <h2>The Members</h2>
         <p><em>We love music!</em></p>
@@ -59,17 +60,8 @@
         </p>
         <br>
         <div class="row">
-            <div class="col-sm-4">
-                <p class="text-center"><strong>Ansh</strong></p><br>
-                <a href="#anshInfo" data-toggle="collapse">
-                    <img src="img/Ansh.JPG" class="img-circle person" alt="Ansh Jain" width="255px" height="255px">
-                </a>
-                <div id="anshInfo" class="collapse">
-                    <p>Violist and Website Control</p>
-                    <p>Loves computer science, math, and music</p>
-                    <p>Member since 2019</p>
-                </div>
-            </div>
+            <div class="col-sm-2"></div>
+            <!-- Container for Kevin Wang -->
             <div class="col-sm-4">
                 <p class="text-center"><strong>Kevin</strong></p><br>
                 <a href="#kevinInfo" data-toggle="collapse">
@@ -81,6 +73,47 @@
                     <p>Member since 2019</p>
                 </div>
             </div>
+            <!-- Container for Nick Hammel -->
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Nick</strong></p><br>
+                <a href="#nickInfo" data-toggle="collapse">
+                    <img src="img/Nick H.JPG" class="img-circle person" alt="Nick Hammel" width="255px" height="255px">
+                </a>
+                <div id="nickInfo" class="collapse">
+                    <p>First Violinist and God Status</p>
+                    <p>Loves violins, socks, and videogames</p>
+                    <p>Member since 2019</p>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <br><br>
+        <div class="row">
+            <!-- Container for Varsha Vasu -->
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Varsha</strong></p><br>
+                <a href="#varshaInfo" data-toggle="collapse">
+                    <img src="img/Varsha.JPG" class="img-circle person" alt="Varsha Vasu" width="255px" height="255px">
+                </a>
+                <div id="varshaInfo" class="collapse">
+                    <p>Second Violinist</p>
+                    <p>Loves </p>
+                    <p>Member since 2019</p>
+                </div>
+            </div>
+            <!-- Container for Ansh Jain -->
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Ansh</strong></p><br>
+                <a href="#anshInfo" data-toggle="collapse">
+                    <img src="img/Ansh.JPG" class="img-circle person" alt="Ansh Jain" width="255px" height="255px">
+                </a>
+                <div id="anshInfo" class="collapse">
+                    <p>Violist and Website Control</p>
+                    <p>Loves computer science, math, and music</p>
+                    <p>Member since 2019</p>
+                </div>
+            </div>
+            <!-- Container for Mia Orlandella -->
             <div class="col-sm-4">
                 <p class="text-center"><strong>Mia</strong></p><br>
                 <a href="#miaInfo" data-toggle="collapse">
@@ -93,33 +126,6 @@
                 </div>
             </div>
         </div>
-        <br><br>
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-4">
-                <p class="text-center"><strong>Nick</strong></p><br>
-                <a href="#nickInfo" data-toggle="collapse">
-                    <img src="img/Nick H.JPG" class="img-circle person" alt="Nick Hammel" width="255px" height="255px">
-                </a>
-                <div id="nickInfo" class="collapse">
-                    <p>First Violinist and God Status</p>
-                    <p>Loves violins, socks, and videogames</p>
-                    <p>Member since 2019</p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <p class="text-center"><strong>Varsha</strong></p><br>
-                <a href="#varshaInfo" data-toggle="collapse">
-                    <img src="img/Varsha.JPG" class="img-circle person" alt="Varsha Vasu" width="255px" height="255px">
-                </a>
-                <div id="varshaInfo" class="collapse">
-                    <p>Second Violinist</p>
-                    <p>Loves </p>
-                    <p>Member since 2019</p>
-                </div>
-            </div>
-            <div class="col-sm-2"></div>
-        </div>
     </div>
 
     <!--Container with the Repertoire Section-->
@@ -128,13 +134,13 @@
             <h2 class="text-center">Repertoire</h2>
             <p class="text-center">We play all kinds of music.</p>
             <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#home">Romantic</a></li>
-                <li><a data-toggle="tab" href="#menu1">Modern</a></li>
-                <li><a data-toggle="tab" href="#menu2">Miscellaneous</a></li>
+                <li class="active"><a data-toggle="tab" href="#romantic">Romantic</a></li>
+                <li><a data-toggle="tab" href="#modern">Modern</a></li>
+                <li><a data-toggle="tab" href="#misc">Miscellaneous</a></li>
             </ul>
 
             <div class="tab-content">
-                <div id="home" class="tab-pane fade in active">
+                <div id="romantic" class="tab-pane fade in active">
                     <h5>Brahms Piano Quintet No. 2, Op. 34</h5>
                     <ul>
                         <li>I. Allegro non troppo</li>
@@ -143,7 +149,7 @@
                         <li>IV. Finale: Poco Sostenuto, Allegro non troppo</li>
                     </ul>
                 </div>
-                <div id="menu1" class="tab-pane fade">
+                <div id="modern" class="tab-pane fade">
                     <h5>Running Home to You</h5>
                     <ul>
                         <li>
@@ -163,7 +169,7 @@
                         </li>
                     </ul>
                 </div>
-                <div id="menu2" class="tab-pane fade">
+                <div id="misc" class="tab-pane fade">
                     <h5>Mii Channel</h5>
                     <ul>
                         <li>
@@ -175,7 +181,7 @@
         </div>
     </div>
 
-    <!--Container with the Contact Section-->
+    <!-- Container with the Contact Section -->
     <div id="contact" class="container">
         <h2 class="text-center">Contact Us</h2>
         <p class="text-center">Drop us a line!</p>
@@ -187,7 +193,7 @@
                 <p><span class="glyphicon glyphicon-envelope"></span> Email: Coming Soon</p>
             </div>
             <div class="col-md-8">
-                <form action = "mailto:ansh.jain1@outlook.com" method = "post" enctype = "text/plain">
+                <form action="mailto:ansh.jain1@outlook.com" method="post" enctype="text/plain">
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <input class="form-control" id="name" name="name" placeholder="Your Name" type="text"
@@ -211,7 +217,7 @@
         </div>
     </div>
 
-    <!-- Image of location/map -->
+    <!-- Image of Piano at the bottom for cool effect -->
     <img src="img/Piano.jpg" class="img-responsive" style="width:100%">
 
     <!-- Footer -->
